@@ -14,9 +14,6 @@ import java.util.Scanner;
  */
 public class Ejemplo06 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
 
@@ -29,11 +26,12 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        // while (bandera) 
+        while (bandera == true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
-            if (calificacion > 20) {
+            if (calificacion > 20) { // control de valores
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
@@ -51,3 +49,6 @@ public class Ejemplo06 {
 
     }
 }
+// estamos haciedo un control, en el que si el usuario ingresa un numero 
+// mayor a 20 entonces el if dice que 20 sera igual a 20 
+// lo deja en 20 y el resultado es igual al valor sumado 20 + 20 = 40 GG.

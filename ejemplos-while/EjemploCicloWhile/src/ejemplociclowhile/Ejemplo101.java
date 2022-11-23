@@ -12,34 +12,37 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo09 {
+public class Ejemplo101 {
    
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite_tabla = 12;
+        int limite_tabla = 0;
         int contador = 1;
         int operacion;
         int tabla;
-        
-        System.out.println("Ingrese el número de tabla a generar"); 
-        tabla = entrada.nextInt(); // 3
-        
         String cadena = ""; // cadena acumulador
-        System.out.printf("%sTabla de multiplicar\n", cadena);
         
-        while (contador <= limite_tabla){ // 1 <= 12 es  v
-            operacion = tabla * contador; // operacion = 3 * 1 = 3
+        System.out.println("Ingrese el número de tabla a generar");
+        tabla = entrada.nextInt();
+        System.out.println("Ingrese un limite");
+        limite_tabla = entrada.nextInt();
+        
+        cadena = String.format("%sTabla de multiplicar\n", cadena);
+        
+        while (contador <= limite_tabla){
+            operacion = tabla * contador;
             
-            System.out.printf("%s%d*%d = %d\n", // ""s3d*1d = d\n === > 3*1=3
+            cadena = String.format("%s%d * %d= %d\n\n", // acumuladora
                     cadena, 
                     tabla, 
                     contador,
                     operacion);
             contador = contador + 1;
         }
+                
+        System.out.printf("%s\n", cadena);
         
     }
 }
-// tabla de multiplicar

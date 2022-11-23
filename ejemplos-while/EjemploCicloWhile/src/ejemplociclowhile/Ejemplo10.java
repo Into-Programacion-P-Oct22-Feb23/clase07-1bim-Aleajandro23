@@ -13,9 +13,7 @@ import java.util.Scanner;
  * @author reroes
  */
 public class Ejemplo10 {
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
@@ -24,17 +22,18 @@ public class Ejemplo10 {
         int contador = 1;
         int operacion;
         int tabla;
+        String cadena = ""; // cadena acumulador
         
         System.out.println("Ingrese el número de tabla a generar");
         tabla = entrada.nextInt();
         
-        String cadena = ""; // cadena acumulador
+        
         cadena = String.format("%sTabla de multiplicar\n", cadena);
         
         while (contador <= 12){
             operacion = tabla * contador;
             
-            cadena = String.format("%s%d*%d=%d\n", 
+            cadena = String.format("%s%d*%d= %d\n\n", // acumuladora
                     cadena, 
                     tabla, 
                     contador,

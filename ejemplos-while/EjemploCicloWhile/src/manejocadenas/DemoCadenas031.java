@@ -9,19 +9,19 @@ package manejocadenas;
  *
  * @author reroes
  */
-public class DemoCadenas03 {
+public class DemoCadenas031 {
     public static void main(String[] args) {
-        String pais = "Ecuador";
-        String ciudad = "Loja";
-        String fechaIndependencia = "18 de noviembre";
+        String nombre = "Ruben";
+        String apellido = "Condoy";
+        int edad = 18;
         String cadenaAcumuladora = "Datos Personales\n";
         
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, pais);
+        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, nombre);
         
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, ciudad);
+        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, apellido);
         
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, 
-                fechaIndependencia);
+        cadenaAcumuladora = String.format("%s%d\n", cadenaAcumuladora, edad);
+       
         
         System.out.printf("%s", cadenaAcumuladora);
         
@@ -30,3 +30,6 @@ public class DemoCadenas03 {
 // opcion propia de java para cadena String.format
 // cadena acumuladora
 // solo un prontf e imprime lo que tiene cadena acumuladora
+// d es para entero = int 
+// decimales f o d = double
+// s para string y para todo

@@ -5,10 +5,7 @@
  */
 package manejocadenas;
 
-/**
- *
- * @author reroes
- */
+
 public class DemoCadenas01 {
     public static void main(String[] args) {
         String pais = "Ecuador";

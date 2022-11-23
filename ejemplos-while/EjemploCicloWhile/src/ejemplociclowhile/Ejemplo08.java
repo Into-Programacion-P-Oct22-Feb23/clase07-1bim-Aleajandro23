@@ -14,9 +14,7 @@ import java.util.Scanner;
  */
 public class Ejemplo08 {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         // TODO code application logic here
 
@@ -30,19 +28,20 @@ public class Ejemplo08 {
         boolean bandera = true;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera) {
-            System.out.println("Ingrese calificación:");
-            calificacion = entrada.nextDouble();
-            suma_total = suma_total + calificacion;
-            contador = contador + 1;
+        // while (bandera) {
+           while (bandera == true) { // true = true (verdadero)
+            System.out.println("Ingrese calificación:"); // por teclado
+            calificacion = entrada.nextDouble();  // el leer
+            suma_total = suma_total + calificacion; // = 0 + calificacion
+            contador = contador + 1;        // = 0 + 1 = 1
 
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer)
 
             // proceso para salir del ciclo.
-            System.out.println("Ingrese si para salir");
-            String temporal = entrada.nextLine();
-            if (temporal.equals("si")) {
-                bandera = false;
+            System.out.println("Ingrese si para salir"); // escribe
+            String temporal = entrada.nextLine();   // lee
+            if (temporal.equals("si")) {  // si es igual a si entonces
+                bandera = false;            // cambia bander a falso y
             }
         }
         promedio_final = suma_total / contador;
@@ -50,3 +49,5 @@ public class Ejemplo08 {
 
     }
 }
+// en el ejemplo 301 el limite es el proceso de la operacion y en la
+// 8 el contador divide el promedio
